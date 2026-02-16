@@ -1,0 +1,63 @@
+{
+  "feature_columns": [
+    "glucose_mean_24h",
+    "glucose_std_24h",
+    "glucose_min_24h",
+    "glucose_max_24h",
+    "last_glucose",
+    "glucose_rate_of_change",
+    "total_basal_24h",
+    "total_bolus_24h",
+    "total_insulin_24h",
+    "total_carbs_24h",
+    "hour_sin",
+    "hour_cos",
+    "basal_dose",
+    "icr",
+    "isf",
+    "reading_count_24h",
+    "bedtime_glucose",
+    "evening_mean_glucose",
+    "evening_glucose_trend",
+    "meal_count",
+    "insulin_carb_ratio_actual",
+    "glucose_range_24h",
+    "glucose_cv"
+  ],
+  "test_metrics": {
+    "mae": 10.7904,
+    "rmse": 14.2837,
+    "r2": 0.9854
+  },
+  "risk_thresholds": {
+    "low_upper": 140,
+    "moderate_upper": 220
+  },
+  "feature_importance": {
+    "bedtime_glucose": 0.5137,
+    "last_glucose": 0.3724,
+    "evening_mean_glucose": 0.0976,
+    "glucose_min_24h": 0.0085,
+    "glucose_max_24h": 0.0017,
+    "glucose_std_24h": 0.0006,
+    "basal_dose": 0.0005,
+    "isf": 0.0005,
+    "total_basal_24h": 0.0005,
+    "glucose_range_24h": 0.0004,
+    "icr": 0.0004,
+    "glucose_mean_24h": 0.0004,
+    "glucose_rate_of_change": 0.0003,
+    "glucose_cv": 0.0003,
+    "evening_glucose_trend": 0.0003,
+    "insulin_carb_ratio_actual": 0.0002,
+    "total_insulin_24h": 0.0002,
+    "total_carbs_24h": 0.0002,
+    "hour_sin": 0.0002,
+    "meal_count": 0.0002,
+    "total_bolus_24h": 0.0002,
+    "hour_cos": 0.0002,
+    "reading_count_24h": 0.0002
+  },
+  "model_type": "XGBRegressor",
+  "training_samples": 8750
+}
